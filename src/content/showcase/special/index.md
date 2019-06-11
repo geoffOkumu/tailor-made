@@ -1,18 +1,18 @@
 ---
 templateKey: showcase
-title: 'For Women'
+title: 'Special Collection'
 date: '2018-11-09T23:23:44+03:00'
-featuredImg: /img/carl-ibale-1644145-unsplash.jpg
+featuredImg: /img/jeremy-chen-1590691-unsplash.jpg
 showcase:
   - images:
-      - /img/carl-ibale-1644145-unsplash.jpg
-      - /img/carl-ibale-1644145-unsplash.jpg
-    title: yellow office suit
+      - /img/jeremy-chen-1590691-unsplash.jpg
+      - /img/jeremy-chen-1590691-unsplash.jpg
+    title: Slim fit designer suit
     customer: 'ig:@c-ibale'
   - images:
-      - /img/azamat-zhanisov-1361403-unsplash.jpg
-      - /img/azamat-zhanisov-1361403-unsplash.jpg
-    title: yellow suit
+      - /img/carl-ibale-1644145-unsplash.jpg
+      - /img/carl-ibale-1644145-unsplash.jpg
+    title: yellow women suit
     customer: 'ig:@c-ibale'
   - images:
       - /img/azamat-zhanisov-1334610-unsplash.jpg
@@ -27,6 +27,6 @@ showcase:
   - images:
       - /img/mohammad-metri-257271-unsplash.jpg
       - /img/mohammad-metri-257271-unsplash.jpg
-    title: metri suit
+    title: women black suit
     customer: 'ig:@metri'
 ---

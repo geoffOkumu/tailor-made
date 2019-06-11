@@ -2,6 +2,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+        name: 'uploads',
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `copy`,
@@ -16,13 +24,26 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `products`,
+        path: `${__dirname}/src/content/products`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: 'uploads',
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1000,
+              maxWidth: 1920,
             },
           },
           {
@@ -31,9 +52,20 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static',
+            },
+          },
           `gatsby-remark-smartypants`,
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/containers/Layout.jsx`),
       },
     },
     `gatsby-transformer-sharp`,

@@ -1,15 +1,44 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from '../components/containers/Layout'
-import Header from '../components/containers/Header'
+import HomePage from '../components/containers/HomePage'
 
-const IndexPage = () => {
-  return (
-    <Layout>
-      <Header />
-      <h1>Home page</h1>
-    </Layout>
-  )
-}
+const IndexPage = ({ data }) => (
+  <>
+    <HomePage data={data} />
+  </>
+)
 
 export default IndexPage
+
+export const indexQuery = graphql`
+  query IndexPageTemplate {
+    copy: markdownRemark(frontmatter: { id: { eq: "home-page" } }) {
+      frontmatter {
+        title
+        headline
+        tagline
+        cta
+      }
+    }
+    showcase: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "showcase" } } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            featuredImg {
+              childImageSharp {
+                fixed(width: 480, height: 600, quality: 100) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`

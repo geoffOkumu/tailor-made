@@ -26,7 +26,7 @@ Container.propTypes = {
 }
 
 Container.defaultProps = {
-  maxWidth: 1344,
+  maxWidth: 1200,
 }
 
 export default Container

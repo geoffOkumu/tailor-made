@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geoffOkumu/www.git"
+    "url": "git+https://github.com/geoffOkumu/tailor-made.git"
   },
   "keywords": [
     "gatsbyjs"
@@ -26,11 +26,13 @@
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.3.31",
     "gatsby-image": "^2.0.27",
+    "gatsby-plugin-layout": "^1.0.15",
     "gatsby-plugin-react-helmet": "^3.0.5",
     "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-remark-copy-linked-files": "^2.0.8",
     "gatsby-remark-images": "^3.0.1",
+    "gatsby-remark-relative-images": "^0.2.2",
     "gatsby-remark-responsive-iframe": "^2.0.8",
     "gatsby-remark-smartypants": "^2.0.7",
     "gatsby-source-filesystem": "^2.0.32",
@@ -39,9 +41,10 @@
     "gsap": "^2.0.2",
     "lodash": "^4.17.11",
     "prop-types": "^15.6.2",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "react-helmet": "^5.2.0",
+    "react-sticky": "^6.0.3",
     "react-transition-group": "^2.5.3",
     "styled-components": "^4.1.3"
   },

@@ -1,6 +1,8 @@
 ---
 templateKey: copy
 id: home-page
-headline: Front-end Development Insights
-tagline: By geoffOkumu
+title: Tailor Made - Custom made suits
+headline: Tailor Made
+tagline: Tailor made suits for weddings, work, events, etc
+cta: Contact us now to get yours
 ---

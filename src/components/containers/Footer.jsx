@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <Container>
-        <Text.span>&copy; Copyright 2019 . Geoff Okumu</Text.span>
+        <Text.span>&copy; Copyright 2019</Text.span>
       </Container>
     </FooterWrapper>
   )
