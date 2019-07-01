@@ -1,5 +1,5 @@
 import React from 'react'
-import { navigate } from 'gatsby'
+import { Link } from 'gatsby'
 import Container from '../components/widgets/Container'
 
 const Checkout = ({ location }) => {
@@ -19,7 +19,10 @@ const Checkout = ({ location }) => {
           ))}
         </div>
       ) : (
-        navigate('/cart')
+        <div>
+          <h1>No products in cart</h1>
+          <Link to="/store">Go to store</Link>
+        </div>
       )}
     </Container>
   )
