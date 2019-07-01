@@ -1,8 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import Container from '../components/widgets/Container'
 
 const Checkout = ({ location }) => {
+  if (!(location.state && location.state.products)) {
+    if (typeof window !== 'undefined') navigate('/store')
+  }
   return (
     <Container>
       {location.state && location.state.products ? (
