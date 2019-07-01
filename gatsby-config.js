@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/tailor-made',
   plugins: [
     `gatsby-plugin-styled-components`,
     {
